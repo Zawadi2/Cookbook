@@ -3,10 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Foods</title>
+  <title>My Pantry</title>
 </head>
 <body>
-    <%- include('./partials/_navbar.ejs') %>
-  <h1>Your Foods</h1>
+    <%- include('../partials/_navbar.ejs') %>
+  <h1>Welcome to my pantry</h1>
+  <a href="/users/<%= user._id %>/appointments/new">Creat an pantry</a>
 </body>
 </html>
