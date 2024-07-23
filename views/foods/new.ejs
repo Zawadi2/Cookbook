@@ -6,7 +6,7 @@
     <title>New Pantry</title>
 </head>
 <body>
-    <%- include('./partials/_navbar.ejs') %>
+    <%- include('../partials/_navbar.ejs') %>
     <h1> New Pantry</h1>
     <form action="/users/<%= user._id %>/foods" method="POST">
         
@@ -17,7 +17,7 @@
         <input type="text" name="intructions" id="instructions">
 
 
-      <button type="submit">Add appointment</button>
+      <button type="submit">Add pantry</button>
     </form>
 </body>
 </html>

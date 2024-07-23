@@ -8,6 +8,12 @@
 <body>
     <%- include('../partials/_navbar.ejs') %>
   <h1>Welcome to my pantry</h1>
-  <a href="/users/<%= user._id %>/appointments/new">Creat an pantry</a>
+  <a href="/users/<%= user._id %>/foods/new">Creat an pantry</a>
+  <ul>
+    <% foods.forEach((food)=>{ %>
+      <li><%= food.name %> at <%= food.instructions %>
+      </li>
+    <% }) %>
+  </ul>
 </body>
 </html>
