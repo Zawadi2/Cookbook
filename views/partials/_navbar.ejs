@@ -5,16 +5,17 @@
     <div class="navbar">
       <h1 id="nav-header">Food</h1>
       <div class="nav-links">
-        <a class="authlink" href="/users/<%=user._id%>/foods">Your Pantry</a>
+        <a class="authlink" href="/users/<%=user._id%>/foods">sign In</a>
         <a class="authlink" href="/auth/sign-out">Sign Out</a>
       </div>
     </div>
   <% } else { %>
     <div class="navbar">
-      <h1 id="nav-header">Home</h1>
+      <h1 id="nav-header">Foods</h1>
       <div class="nav-links">
         <a class="authlink" href="/auth/sign-in">Sign In</a>
         <a class="authlink" href="/auth/sign-up">Sign Up</a>
+          <a class="authlink" href="/users">Explore Our Community</a>
       </div>
     </div>
   <% } %>
